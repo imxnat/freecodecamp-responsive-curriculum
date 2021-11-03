@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="wrapper">
+      <header>
+          <h1 id="title">DeliveryApp Survey Form</h1>
+          <p id="description">We invite you to help us bringing the best of our services to you by sharing your opinions with us!
+          </p>
+      </header>
+
+      <div class="form-wrapper">
+          <form class="survey-form">
+            <label id="name-label" for="name">Name
+              <input 
+                id="name" 
+                type="text" 
+                autofocus 
+                placeholder=" Enter your Name..."
+                required
+              >
+            </label>
+
+            <label id="email-label" for="email">Email
+              <input 
+                id="email" 
+                type="email" 
+                placeholder="Enter a valid email address"
+                required
+              >
+            </label>
+
+            <label id="number-label" for="number">Age (optional)
+              <input 
+                id="number" 
+                type="number" 
+                min="18" 
+                max="60" 
+                placeholder="Enter your age"
+              >
+            </label>
+  <!-- dropdown list -->
+            <label class="dropdown-label" for="dropdown"> Which service is the most used by you?:
+              <select id="dropdown" name="dropdown" required >
+                <option disabled value="">Select one service</option>
+                <option value="" selected></option>
+                <option value="Supermarket">Supermarket</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="Fast Cash">Fast Cash</option>
+              </select>
+            </label>
+
+  <!-- radio buttons options -->
+          <p class="p-label">How would you rate our Delivery Services so far?</p>
+            <label for="r1">
+              <input 
+                id="r1" 
+                type="radio" 
+                name="feedback"
+                value="satisfied"
+              >I feel satisfied
+            </label>
+
+            <label for="r2">
+              <input 
+                id="r2" 
+                type="radio" 
+                name="feedback" 
+                value="good">Good
+            </label>
+
+            <label for="r3">
+              <input 
+                id="r3"  
+                type="radio" 
+                name="feedback"
+                value="better"  
+              >Can be better
+            </label>
+
+  <!-- multiple selections checkboxes -->
+          <p class="p-label">What would you like to see new in future Updates?</p>
+            <label for="ch1">
+              <input 
+                id="ch1" 
+                type="checkbox" 
+                value="coupons"
+              >Coupons
+            </label>
+
+            <label for="ch2">
+              <input 
+                id="ch2" 
+                type="checkbox" 
+                value="payments"
+                >More payment options
+            </label>
+
+            <label for="ch3">
+              <input id="ch3" type="checkbox" value="stores">New stores
+            </label>
+            <label for="ch4">
+              <input id="ch4" type="checkbox" value="tracking">Order Tracking details
+            </label>
+  <!-- textarea -->
+            <p class="p-label">Any comments or suggestions?</p>
+            <textarea placeholder="Enter your comments here..."></textarea>
+
+            <button class="submit" type="submit" >Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  </body>
+</html>
