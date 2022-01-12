@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor | Landing Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/b927d03049.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        
+        <nav id="nav-bar" class="navbar">
+
+            <figure class="logo-container">
+                <img id="header-img" class="header-logo" src="./assets/logo-pop.png" alt="company-logo"> 
+            </figure>
+            <input type="checkbox" id="check">
+            <label for="check" class="nav-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li>
+                    <a class="nav-link" href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#how-works">Así funciona</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#team">Especialistas</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pricing">Honorarios</a>
+                </li>
+            </ul>
+        </nav>    
+    </header>
+    <!--  BANNER -->
+        <div class="banner-container">        
+            <div class="banner-info-container">
+                <div class="banner-text-container" >
+                    <h1 class= "banner-text" >Atención Médica inmediata</h1>
+                    <span>A sólo un click de mejorar tu salud</span>
+                </div>
+                <figure >
+                        <img class="banner-img" src="./assets/doctors.png" alt="banner doctor representation">
+                </figure>
+            </div>
+       
+        <form id="form" class="banner-form" action="">
+            <label for="email" class="form-label"> Agenda tu consulta</label>
+            <input  
+                id="email" 
+                class="form-input" 
+                type="email"
+                name="email" 
+                placeholder="Ingresa tu correo"
+                required
+                autofocus
+            >
+            <button class="form-button" id="submit" type="submit">Agendar</button>
+        </form>
+        </div>
+    <main>
+<!-- APARTADO 1 -->
+        <section id="services" class="section-container">
+            <h2 class="section-title">CONOCE NUESTROS SERVICIOS</h2>
+            <div class="grid-container">
+                <div class="grid-card s1">
+                    <img src="./assets/estetoscopio.png" alt="sevicio" class="card-icon">
+                    <h4 class="card-tile">Medicina General</h4>
+                    <p class="card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                </div>
+                <div class="grid-card s2">
+                        <img src="./assets/estetoscopio.png" alt="sevicio" class="card-icon">
+                        <h4 class="card-tile">Pediatría</h4>
+                        <p class="card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                </div>
+                <div class="grid-card s3">
+                    <img src="./assets/estetoscopio.png" alt="sevicio" class="card-icon">
+                    <h4 class="card-tile">Epidemiología</h4>
+                    <p class="card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="grid-card s4">
+                    <img src="./assets/estetoscopio.png" alt="sevicio" class="card-icon">
+                    <h4 class="card-tile">Receta Médica</h4>
+                    <p class="card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+<!-- APARTADO 2 -->
+        <section id="how-works">
+            <h2 class="section-title">CÓMO FUNCIONA</h2>
+            <div class="video-cont">
+            <iframe id="video" width="400" height="315" 
+                src="https://www.youtube.com/embed/p7aJi9HeyrE" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+           </div>
+        </section>
+<!-- APARTADO 3 -->
+        <section id="team">
+            <h2 class="section-title">ESPECIALISTAS</h2>
+        </section>
+<!-- APARTADO 4 -->
+<section id="pricing">
+    <h2 class="section-title">NUESTROS HONORARIOS</h2>
+</section>
+    </main>
+    </body>
+</html>
